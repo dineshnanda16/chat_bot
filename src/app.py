@@ -23,7 +23,7 @@ def get_response(query,chat_history):
 """
     prompt=ChatPromptTemplate.from_template(template)
 
-    llm = ChatCohere()
+    llm = ChatCohere(COHERE_API_KEY="r6H0r9mAApORRZgBIUJqgMT4I3EwYYpZtqOtyEKI")
 
     chain= prompt | llm | StrOutputParser()
 
